@@ -6,7 +6,7 @@ from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 from sqlalchemy import create_engine
 
 # This engine just used to query for list of databases
-mysql_engine = create_engine('mysql+pymysql://{0}:{1}@{2}:{3}'.format("vinod", "Oncemore!1", "localhost", 3306))
+mysql_engine = create_engine('mysql+pymysql://{0}:{1}@{2}:{3}'.format("vinod", "mysql password", "localhost", 3306))
 mysql_engine.execute("USE Employee")
 meta=MetaData()
 cursor = mysql_engine.execute("select * from personnal_info")
