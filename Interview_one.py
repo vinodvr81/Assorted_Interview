@@ -18,7 +18,7 @@ def travel(intputlist:list):
             dummy_dict[v]+=1
         else:
             dummy_dict[v] = 1
-        #print(dummy_dict)
+    #print(dummy_dict)
     for key,value in dummy_dict.items():
         if value == 1:
             for i,v in enumerate(list(intputlist)):
