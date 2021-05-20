@@ -28,7 +28,7 @@ def travel(intputlist:list):
 
                 if key == y:
                     list_dest.append(y)
-
+    #print(list_source,list_dest)
     if list_source[0] and list_dest[0]:
         return (list_source[0],list_dest[0])
     else:
