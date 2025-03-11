@@ -1,0 +1,71 @@
+    1  sudo apt update
+    2  sudo apt install nodejs
+    3  sudo apt install npm
+    4  npm -V
+    5  node -v
+    6  npm -v
+    7  sudo apt autoremove
+    8  sudo dpkg --configure -a
+    9  about
+   10  hostname ctl
+   11  hostnamectl
+   12  uname -r
+   13  dpkg --list | grep linux-image
+   14  sudo apt-get remove --purge
+   15  dpkg --list | grep linux-image
+   16  uname -r
+   17  sudo dpkg --configure -a
+   18  uname -r
+   19  sudo reboot
+   20  uname -r
+   21  dpkg --list | grep linux-image
+   22  sudo apt-get remove --purge
+   23  sudo apt-get remove --purge linux-image-6.6.10-76060610-generic 
+   24  dpkg --list | grep linux-image
+   25  sudo apt-get remove --purge linux-image-6.8.0-76060800daily20240311-generic 
+   26  ls -l /boot/
+   27  sudo rm /boot/config-6.6.10-76060610-generic 
+   28  sudo rm /boot/config-6.8.0-76060800daily20240311-generic 
+   29  sudo rm /boot/initrd.img-6.4.6-76060406-generic 
+   30  sudo rm /boot/System.map-6.6.10-76060610-generic 
+   31  sudo rm /boot/System.map-6.8.0-76060800daily20240311-generic 
+   32  ls -l /boot/
+   33  sudo update-grub
+   34  sudo reboot
+   35  sudo apt-get remove --purge
+   36  docker images
+   37  sudo apt update
+   38  sudo apt install docker.io
+   39  sudo apt install podman-docker
+   40  docker pull httpd
+   41  sudo docker pull httpd
+   42  docker images
+   43  sudo docker pull Docker/httpd
+   44  sudo docker pull httpd
+   45  $ podman run
+   46  $ sudo podman build -f Dockerfile
+   47  sudo apt install docker
+   48  sudo docker pull httpd
+   49  sudo apt install docker
+   50  sudo apt install Docker
+   51  sudo apt install docker.io
+   52  sudo docker pull httpd
+   53  docker
+   54  docker -v
+   55  lsblk
+   56  sudo dd if=Downloads/pop-os_22.04_amd64_intel_47.iso of=/dev/sdb bs=4M status=progress
+   57  pip3 install pandas
+   58  sudo apt install python3-pip
+   59  pip3 install pandas
+   60  pip3 install pyspark
+   61  pip3 install flask
+   62  pip3 install django
+   63  pip3 install jupyter
+   64  jupyter notebook
+   65  pwd
+   66  ls -l
+   67  ls -l Documents/
+   68  mkdir /home/p/his_tory
+   69  chmod 755 /home/p/his_tory/
+   70  cd /home/p/his_tory/
+   71  history > hist1.txt

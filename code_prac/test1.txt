@@ -1,0 +1,63 @@
+A Site Reliability Engineer (SRE) role typically focuses on ensuring system reliability, scalability, and automation. Python and Ansible are often listed as primary experience requirements because they are essential tools for achieving these goals:
+
+1. Python (Scripting & Automation)
+Automation: SREs automate repetitive tasks like deployments, monitoring, and incident response.
+Infrastructure as Code (IaC): Writing scripts to manage cloud infrastructure (AWS, GCP, Azure).
+Monitoring & Logging: Creating custom scripts for observability (integrating with Prometheus, Grafana, ELK).
+Incident Response: Developing self-healing mechanisms and auto-remediation scripts.
+APIs & Integrations: Many DevOps and monitoring tools expose APIs, which can be managed via Python.
+2. Ansible (Configuration Management & Deployment)
+Infrastructure Automation: Ansible automates provisioning, configuration management, and application deployment.
+Declarative Configuration: Ensures system consistency across environments.
+Security & Compliance: Automates patches, updates, and compliance checks.
+Multi-Cloud & Hybrid Support: Works across on-premises and cloud environments.
+Why Both?
+Python is often used for complex logic, integrations, and scripting.
+Ansible is used for declarative infrastructure management, making automation scalable and repeatable.
+Since SREs work on automating infrastructure, ensuring system resilience, and handling deployments, these tools are fundamental to their day-to-day responsibilities.
+
+
+
+
+
+
+
+You said:
+what are slo's sla's and sli's?
+ChatGPT said:
+SLOs, SLAs, and SLIs are key concepts in Site Reliability Engineering (SRE) that help define and measure system reliability and performance.
+
+1. Service Level Indicator (SLI) – "What We Measure"
+SLIs are metrics that quantify the reliability and performance of a system. They are used to track how well a service is performing.
+
+Examples of SLIs:
+Availability: Percentage of successful HTTP requests (200 OK responses).
+Latency: Response time of an API (p95 < 100ms).
+Error Rate: Percentage of failed requests.
+Throughput: Number of requests per second.
+2. Service Level Objective (SLO) – "Our Target"
+SLOs define the acceptable performance level for an SLI. They set goals that a service should meet.
+
+Examples of SLOs:
+Availability SLO: "Our service should have 99.9% uptime over a 30-day period."
+Latency SLO: "95% of requests should complete in under 200ms."
+Error Rate SLO: "Less than 0.1% of requests should fail."
+SLOs help teams make decisions—for example, whether to prioritize new features or reliability improvements.
+
+3. Service Level Agreement (SLA) – "What We Promise"
+SLAs are contractual agreements with users or customers that define expected service levels. If the SLA is violated, there are consequences, such as refunds or penalties.
+
+Examples of SLAs:
+Cloud Provider SLA: "99.99% uptime guaranteed, or customers get a 10% refund."
+API SLA: "Support team will respond to critical issues within 1 hour."
+SLAs are legally binding, while SLOs are internal goals.
+
+How They Relate
+SLIs measure performance.
+SLOs define performance targets.
+SLAs set contractual obligations.
+Example Scenario:
+
+Your SLI shows your API uptime is 99.7%.
+Your internal SLO is 99.9% uptime.
+Your SLA guarantees 99.5% uptime, so you’re compliant but below your internal target.
